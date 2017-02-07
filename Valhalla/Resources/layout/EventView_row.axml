@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="160dp"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingLeft="5dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    android:weightSum="100"
+    android:id="@+id/eventRow"
+    android:background="#000">
+    <TextView
+        android:text="EventType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/eventName"
+        android:textSize="24dp"
+        android:textColor="#FFF"
+        android:id="@+id/eventType" />
+    <TextView
+        android:text="EventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:textSize="22dp"
+        android:textColor="#FFF"
+        android:id="@+id/eventName" />
+    <TextView
+        android:text="EventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/eventName"
+        android:textSize="22dp"
+        android:textColor="#FFF"
+        android:id="@+id/eventDate" />
+    <ImageView
+        android:layout_width="93.0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="80dp"
+        android:maxWidth="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/exclamation"
+        android:id="@+id/attendes" />
+</RelativeLayout>

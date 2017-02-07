@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="300dp"
+    android:minHeight="400dp"
+    android:background="#DEDEDC">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="Member Activ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:id="@+id/memActive" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="200dp"
+            android:maxWidth="140dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/memberDefault"
+            android:id="@+id/SelectedMemPic"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginBottom="0.0dp"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="Member Name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/SelectedMemPic"
+            android:layout_alignParentTop="true"
+            android:textSize="22dp"
+            android:id="@+id/memName" />
+        <TextView
+            android:text="Member Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/SelectedMemPic"
+            android:layout_below="@+id/memName"
+            android:textSize="20dp"
+            android:id="@+id/memPhone" />
+        <TextView
+            android:text="Member Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/SelectedMemPic"
+            android:layout_below="@+id/memPhone"
+            android:textSize="20dp"
+            android:id="@+id/memEmail" />
+        <TextView
+            android:text="Member Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/SelectedMemPic"
+            android:layout_below="@+id/memEmail"
+            android:textSize="20dp"
+            android:id="@+id/memAdress" />
+    </RelativeLayout>
+</LinearLayout>

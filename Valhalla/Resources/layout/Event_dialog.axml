@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="300dp"
+    android:minHeight="400dp"
+    android:background="#DEDEDC">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Event Type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/selEventType" />
+        <TextView
+            android:text="Event Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selEventType"
+            android:gravity="center"
+            android:id="@+id/selEventName" />
+        <TextView
+            android:text="Event Date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selEventName"
+            android:gravity="center"
+            android:id="@+id/selEventDate" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:text="Arrangement Information"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:id="@+id/textLabelInfo" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Så vi ved at være på plads med årets generelforsamling.  Husk det er muligt at medbringe nye medlemmer samt at alle kan opstille til alle positioner inden for logen.  Ønsker man at med bringe et medlem så skriv en kommentar med det nye medlems navn her under arrangementet.  Ønsker man at stille op til en position i logen så send en sms med med navn og hvilken position man ønsker at stille op til på følgende nummer: 40417442. Se eventuelt positioner under vedtægter.  Der vil være en form for aftensmad samt selvfølgelig øl på logens regning.  For dem der ikke ved det eller skulle have glemt det er det her årets arrangementer bestemmes, så har du en go ide til et sjovt/interessant arrangement så husk at medbringe et overslag på pris og anden praktisk information."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            
+            android:id="@+id/selEventInfo" />
+    </LinearLayout>
+  <RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:id="@+id/linearLayout4">
+    <Button
+        android:id="@+id/butUploadPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TILFØJ BILLED" />
+  </RelativeLayout>
+   <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Arrangement Adresse"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/txtLabelAdress" />
+   <TextView
+            android:text="Ellevangen 1, 5260 Odense S (Sankt Klemens)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLabelAdress"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/selEventAdress" />
+      <Button
+        android:id="@+id/butOpenMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selEventAdress"
+        android:layout_alignParentLeft="true"
+        android:text="ÅBEN I MAPS" />
+    <TextView
+            android:text="Deltagere"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtLabelAttendes" />
+   <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLabelAttendes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/selEventAttending">
+     
+   </ListView>
+    </RelativeLayout>
+  <RelativeLayout
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+    
+     android:id="@+id/linearLayout4">
+    <Button
+        android:id="@+id/butAttend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+        android:text="TILMELD" />
+    <Button
+          android:id="@+id/butNotAttend"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:text="FRAMELD" />
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="VoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#2196F3</item>
+    <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+  </style>
+  <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+    <item name="color">#F5F5F5</item>
+    <item name="spinBars">true</item>
+  </style>
+  <style name="dialog_animation">
+    <item name="android:windowEnterAnimation">@anim/slide_up</item>
+    <item name="android:windowExitAnimation">@anim/slide_right</item>
+  </style>
+  </resources>
